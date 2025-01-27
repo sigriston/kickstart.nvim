@@ -618,7 +618,7 @@ require('lazy').setup({
       local servers = {
         -- clangd = {},
         -- gopls = {},
-        -- pyright = {},
+        pyright = {},
         -- rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
@@ -626,8 +626,12 @@ require('lazy').setup({
         --    https://github.com/pmizio/typescript-tools.nvim
         --
         -- But for many setups, the LSP (`ts_ls`) will work just fine
-        -- ts_ls = {},
+        ts_ls = {},
         --
+
+        -- haskell-language-server
+        -- see: https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md#hls
+	hls = {},
 
         lua_ls = {
           -- cmd = { ... },
